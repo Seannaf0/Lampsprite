@@ -29,11 +29,11 @@ public class PauseMenu : MonoBehaviour
     {
         SettingsPanel.SetActive(true);
         PausePanel.SetActive(false);
-        Time.timeScale = 1;
     }
 
     public void CloseSettings()
     {
         SettingsPanel.SetActive(false);
+        Time.timeScale = 1;
     }
 }
