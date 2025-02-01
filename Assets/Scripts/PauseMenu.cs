@@ -5,6 +5,7 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject PausePanel;
+    public GameObject SettingsPanel;
 
     // Update is called once per frame
     void Update()
@@ -22,5 +23,17 @@ public class PauseMenu : MonoBehaviour
     {
         PausePanel.SetActive(false);
         Time.timeScale = 1;
+    }
+
+    public void OpenSettings()
+    {
+        SettingsPanel.SetActive(true);
+        PausePanel.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void CloseSettings()
+    {
+        SettingsPanel.SetActive(false);
     }
 }
