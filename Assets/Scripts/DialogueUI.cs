@@ -5,18 +5,27 @@ using TMPro;
 public class DialogueUI : MonoBehaviour
 {
     [SerializeField] private TMP_Text textLabel;
-    //[SerializeField] private DialogueObject testDialogue;
+    private TypeWriterEffect typeWriterEffect;
+    
+    [SerializeField] private DialogueObject testDialogue;
 
     private void Start()
     {
-        GetComponent<TypeWriterEffect>().Run("This a text test!\n Hello... its me.", textLabel);
-      
-        // ShowDialogue(testDialogue);
+        typeWriterEffect = GetComponent<TypeWriterEffect>();
+        ShowDialogue(testDialogue);
     }
 
     public void ShowDialogue(DialogueObject dialogueObject)
     {
-        //StartCoroutine(dialogueObject);
+        StartCoroutine(StepThroughDialogue(dialogueObject));
     }
 
+    private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
+    {
+        foreach(string dialogue in dialogueObject.Dialogue)
+        {
+            yield return typeWriterEffect.Run(dialogue, textLabel);
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+        }
+    }
 }
