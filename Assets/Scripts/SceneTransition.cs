@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class OpenCutScene : MonoBehaviour
+public class SceneTransition : MonoBehaviour
 {
-   void OnEnable()
+    public void NextScene()
     {
-       SceneManager.LoadScene("3rdLevel", LoadSceneMode.Single) ;
+        SceneManager.LoadScene("SampleScene");
     }
 }

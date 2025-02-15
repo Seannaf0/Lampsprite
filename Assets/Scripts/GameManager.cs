@@ -21,11 +21,11 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
-    public void QuitGame()
+    /*public void QuitGame()
     {
         UnityEditor.EditorApplication.isPlaying = false;
         //To end a game you Build, comment the previous line
         //And uncomment the following line.
         //Application.Quit();
-    }
+    }*/
 }
