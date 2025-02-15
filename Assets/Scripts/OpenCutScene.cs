@@ -7,6 +7,6 @@ public class OpenCutScene : MonoBehaviour
 {
    void OnEnable()
     {
-       SceneManager.LoadScene("Level 1", LoadSceneMode.Single) ;
+       SceneManager.LoadScene("3rdLevel", LoadSceneMode.Single) ;
     }
 }
