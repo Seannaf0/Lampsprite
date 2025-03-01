@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - Crazy I was crazy once
+  - They put me in a room
   responses:
   - responseText: Correct
     dialogueObject: {fileID: 11400000, guid: 916063614d1045e4da19842dcedf620e, type: 2}

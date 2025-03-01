@@ -1,5 +1,5 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -34,12 +34,19 @@ public class DialogueUI : MonoBehaviour
             string dialogue = dialogueObject.Dialogue[i];
             yield return typeWriterEffect.Run(dialogue, textLabel);
 
-           //  if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.HasResponses) break;
+            if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.HasResponses) break;
 
             yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
         }
-
-        CloseDialogueBox();
+        
+        if(dialogueObject.HasResponses)
+        {
+            responseHandler.ShowResponse(dialogueObject.Responses);
+        }
+        else
+        {
+            CloseDialogueBox();
+        }
     }
 
     private void CloseDialogueBox()
