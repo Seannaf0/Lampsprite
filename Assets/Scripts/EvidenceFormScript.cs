@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class EvidenceFormScript : MonoBehaviour
 {
-    public TMP_Dropdown Evidence1;
+    public TMP_Dropdown Dropdown;
     public void GetDropDownValue()
     {
-        int pickedEntryIndex = Evidence1.value;
+        int pickedEntryIndex = Dropdown.value;
         Debug.Log(pickedEntryIndex);
     }
 }
