@@ -4,6 +4,38 @@ using UnityEngine;
 
 public class ReactionScript : MonoBehaviour
 {
-   // try to come up with a script that will change the reaction of the sprite to either surpirsed, upset, neutral, or glad depending on how well you did on their mood. Also since I have your atenttion remember to organize the dialogue scripts._.
-   
+    public float moodMeter;
+    public bool EmotionalDamage;
+    public Response responseChange;
+
+    void Start()
+    {
+        moodMeter = 0;
+    }
+
+     void Update()
+    {
+        if(moodMeter >= 0)
+        {
+            //add the sprite for a happy mood
+
+        }
+        else
+        {
+            //the mood of the sprite is the same
+
+        }
+        
+        if(moodMeter <= 0)
+        {
+            //add the sprite for a angry or sad mood
+
+        }
+        else
+        {
+            //the mood of the sprite is the same
+
+        }
+    }
+
 }
