@@ -5,37 +5,42 @@ using UnityEngine;
 public class ReactionScript : MonoBehaviour
 {
     public float moodMeter;
-    public bool EmotionalDamage;
     public Response responseChange;
+
+    public SpriteRenderer SpriteRenderer;
+    public Sprite[] reactionSprite;
 
     void Start()
     {
         moodMeter = 0;
     }
 
-     void Update()
+    void Update()
     {
-        if(moodMeter >= 0)
-        {
-            //add the sprite for a happy mood
 
-        }
-        else
+        switch(moodMeter)
         {
-            //the mood of the sprite is the same
 
-        }
-        
-        if(moodMeter <= 0)
-        {
-            //add the sprite for a angry or sad mood
+            //each case is a different sprite for the expression(In Order: Neutral, Angry, Sad, Happy...) make sure to add the call script to pull from the reaction/moodchange of the reponse script
+            case 0:
+                SpriteRenderer.sprite = reactionSprite[0];
+                break;
 
-        }
-        else
-        {
-            //the mood of the sprite is the same
+            case 1:
+                SpriteRenderer.sprite = reactionSprite[1];
+                break;
 
+            case 2:
+                SpriteRenderer.sprite = reactionSprite[2];
+                break;
+
+            case 3:
+                SpriteRenderer.sprite = reactionSprite[3];
+                break;
+
+            default:
+                break;
         }
+
     }
-
 }

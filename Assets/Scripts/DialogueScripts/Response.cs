@@ -10,4 +10,9 @@ public class Response
     public string ResponseText => responseText;
 
     public DialogueObject DialogueObject => dialogueObject;
+
+    public class ReactionScript
+    {
+
+    }
 }
