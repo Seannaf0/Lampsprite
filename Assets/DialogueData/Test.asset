@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   dialogue:
-  - Our test dialogue for the script
-  - 1 2 3 4 5 6!?
   - "I\u2019ve been reading through some of the museum\u2019s digital collection\u2013or,
     gallery, I guess. \r\n(KQA)"
   - "I read comics the most, and it\u2019s pretty fun to see how the characters and
@@ -30,5 +28,3 @@ MonoBehaviour:
     stay on there for too long. \r\n\n(a1)"
   - "(I think they\u2019re worried that looking at screens too much would be worse
     for me than a regular person, which makes sense.) \r\n\n(A1)"
-  - 
-  - 
