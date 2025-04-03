@@ -7,6 +7,6 @@ public class OpenCutScene : MonoBehaviour
 {
    void OnEnable()
     {
-       SceneManager.LoadScene("3rdLevel", LoadSceneMode.Single) ;
+       SceneManager.LoadScene("Level 1 Interview", LoadSceneMode.Single) ;
     }
 }

@@ -18,5 +18,10 @@ MonoBehaviour:
   responses:
   - responseText: Wrong
     dialogueObject: {fileID: 11400000, guid: 6b055869aa1f5e34ca417d7e6885fc07, type: 2}
+    responseChange: 2
+  - responseText: Neutral
+    dialogueObject: {fileID: 11400000, guid: 1f8cbb411745bd544b62f7b84467fd96, type: 2}
+    responseChange: 0
   - responseText: Correct
     dialogueObject: {fileID: 11400000, guid: 1f8cbb411745bd544b62f7b84467fd96, type: 2}
+    responseChange: 4

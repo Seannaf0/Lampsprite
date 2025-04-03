@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueUI : MonoBehaviour
 {
@@ -46,6 +47,7 @@ public class DialogueUI : MonoBehaviour
         else
         {
             CloseDialogueBox();
+            SceneManager.LoadScene("Level 1 Computer", LoadSceneMode.Single);
         }
     }
 
