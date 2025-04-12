@@ -27,5 +27,5 @@ MonoBehaviour:
     dialogueObject: {fileID: 11400000, guid: 075df24f50fccd24b9dee10119d54c98, type: 2}
     responseChange: 0
   - responseText: Once you leave?
-    dialogueObject: {fileID: 0}
+    dialogueObject: {fileID: 11400000, guid: 5814567e5693aa64f8df2c6bc0ba5f19, type: 2}
     responseChange: 0
