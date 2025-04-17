@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
-  m_Name: Level1(Part2-1A)
+  m_Name: Level1(1-1)
   m_EditorClassIdentifier: 
   dialogue:
   - '"what have you been getting up to in your free time...?"'
@@ -22,7 +22,7 @@ MonoBehaviour:
 
 '
   responses:
-  - responseText: Introduction to comics?
+  - responseText: Intro to Comics?
     dialogueObject: {fileID: 11400000, guid: 535f9a40fa56cc24da7fedfba0e82192, type: 2}
     responseChange: 0
   - responseText: Superheroes?

@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
-  m_Name: Level1(Part2-1B)
+  m_Name: Level1(1-2)
   m_EditorClassIdentifier: 
   dialogue:
   - '"How were you introduced to comics? Did you already know a lot about them, or
     did you become interested in them while staying here...?"'
   - "There is a physical comics exhibit down the hall from here!\r\nSome of the museum
     staff bring me booklets and flyers from other rooms, so I can see what\u2019s
-    going on.\r\nThey taught me how to use the digital archives, but I\u2019m not
-    allowed to stay on there for too long."
+    going on.\r\n"
+  - "They taught me how to use the digital archives, but I\u2019m not allowed to
+    stay on there for too long."
   - "(I think they\u2019re worried that looking at screens too much would be worse
     for me than a regular person, which makes sense.)"
   - "The stuff from before the 1930s doesn\u2019t really resonate with me\u2013\r\nI
@@ -28,9 +29,9 @@ MonoBehaviour:
     detective comics became more popular, starting around\u2026 1935, maybe? Or 1937\u2013something
     like that.\r\n"
   responses:
-  - responseText: Anything Stands Out?
-    dialogueObject: {fileID: 11400000, guid: 279ad4b551495fa4cb36dac29b2ce0b5, type: 2}
+  - responseText: Stands Out?
+    dialogueObject: {fileID: 11400000, guid: 5ae659d7a1e562742ab3646df90b6e77, type: 2}
     responseChange: 0
   - responseText: Why Comics?
-    dialogueObject: {fileID: 0}
+    dialogueObject: {fileID: 11400000, guid: 2d3ee6a3bd749794584e174cfeb6be99, type: 2}
     responseChange: 0
