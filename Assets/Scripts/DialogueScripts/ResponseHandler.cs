@@ -9,7 +9,7 @@ public class ResponseHandler : MonoBehaviour
     [SerializeField] private RectTransform responseBox;
     [SerializeField] private RectTransform responseButtonTemplate;
     [SerializeField] private RectTransform responseContainer;
-
+    [SerializeField] private TranscriptSave Saving; 
     private DialogueUI dialogueUI;
 
     private List<GameObject> tempResponseButtons = new List<GameObject>();
@@ -28,7 +28,11 @@ public class ResponseHandler : MonoBehaviour
             GameObject responseButton = Instantiate(responseButtonTemplate.gameObject, responseContainer);
             responseButton.gameObject.SetActive(true);
             responseButton.GetComponent<TMP_Text>().text = response.ResponseText;
-            responseButton.GetComponent<Button>().onClick.AddListener(() => OnPickedResponse(response));
+
+            responseButton.GetComponent<Button>().onClick.AddListener(() => {
+                Saving.saveObject = response;
+                OnPickedResponse(response);
+            });
 
             tempResponseButtons.Add(responseButton);
 
@@ -38,6 +42,7 @@ public class ResponseHandler : MonoBehaviour
         responseBox.sizeDelta = new Vector2(responseBox.sizeDelta.x, responseBoxHeight);
         responseBox.gameObject.SetActive(true);
     }
+
 
     private void OnPickedResponse(Response response)
     {

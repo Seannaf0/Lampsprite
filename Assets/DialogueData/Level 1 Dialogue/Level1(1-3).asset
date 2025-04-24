@@ -16,4 +16,10 @@ MonoBehaviour:
   - '"Any thoughts on... superhero comics...?"'
   - "Not really? \r\nI sort of like comics that make the reader think a bit. \r\nI\u2019m
     not a fan of the fighting or action scenes in other genres as much. "
-  responses: []
+  responses:
+  - responseText: 
+    dialogueObject: {fileID: 0}
+    responseChange: 0
+  - responseText: 
+    dialogueObject: {fileID: 0}
+    responseChange: 0
