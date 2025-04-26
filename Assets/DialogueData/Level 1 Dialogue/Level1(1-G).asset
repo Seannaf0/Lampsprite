@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
   m_Name: Level1(1-G)
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - "\"I\u2019d rather you not interfere with the research process then. Is there
+    anything else you have to say...?\""
+  - "Uh, I think I\u2019m good. Thanks."
   responses: []

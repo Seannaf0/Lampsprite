@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
   m_Name: Level1(1-F)
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - '"You know what? Maybe you could give it a shot anyway. Any ideas for what lamp
+    you are...?"'
+  - "Well, the museum staff joke a lot about how I only have brown and blue attire.\r\nBut
+    I\u2019ve heard it\u2019s not always a good idea to connect sprites to their
+    bonded objects using color alone.\r\nBut hey, maybe you\u2019ll find some more
+    evidence!"
   responses: []

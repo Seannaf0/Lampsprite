@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
   m_Name: Level1(1-5)
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - '"Is there a reason why you like comics so much...?"'
+  - "I don\u2019t really know. Maybe it\u2019s because I enjoy seeing how the characters
+    go through things, make decisions\u2026\r\nI read a lot of things with mysteries
+    and investigations, which I think are more interesting."
+  - "But there\u2019s no real reason, I guess. I just feel entertained while reading
+    them, and that\u2019s what matters most, right?\r"
   responses: []

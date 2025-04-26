@@ -620,16 +620,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moodMeter: 0
-  responseChange:
-    responseText: 
-    dialogueObject: {fileID: 0}
-    responseChange: 0
   SpriteRenderer: {fileID: 319763440}
   reactionSprite:
   - {fileID: 21300000, guid: a476220f44f2ee74390456ca3c6e7bae, type: 3}
   - {fileID: 21300000, guid: 5b7face7d095bb14a935bd6f9998221d, type: 3}
   - {fileID: 21300000, guid: 2ff2289100a361247a795898620dcaba, type: 3}
   - {fileID: 21300000, guid: fa7d95660c39ca64a8e446fdc351806c, type: 3}
+  responseHolder:
+    Moodcontroller: {fileID: 319763442}
+    responseText: 
+    dialogueObject: {fileID: 0}
+    responseChange: 0
 --- !u!1 &586405674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,6 +1185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveObject:
+    Moodcontroller: {fileID: 0}
     responseText: 
     dialogueObject: {fileID: 0}
     responseChange: 0
