@@ -64,6 +64,6 @@ public class EvidenceFormScript : MonoBehaviour
 
     public void Answer(int index)
     {
-        answers[index] = dropdowns[index].value;
+        answers[index] = dropdowns[index].value;    
     }
 }
