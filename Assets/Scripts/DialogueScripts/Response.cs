@@ -11,10 +11,6 @@ public class Response
 
     public DialogueObject DialogueObject => dialogueObject;
 
-    public class ReactionScript
-    {
-
-    }
 }
 
 //pass all the dialogue to an object that will tranfer the data to scene 2(Computer scene) 

@@ -626,11 +626,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5b7face7d095bb14a935bd6f9998221d, type: 3}
   - {fileID: 21300000, guid: 2ff2289100a361247a795898620dcaba, type: 3}
   - {fileID: 21300000, guid: fa7d95660c39ca64a8e446fdc351806c, type: 3}
-  responseHolder:
-    Moodcontroller: {fileID: 319763442}
-    responseText: 
-    dialogueObject: {fileID: 0}
-    responseChange: 0
 --- !u!1 &586405674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,11 +1176,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1040040340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e55eb523bfe57af4b86fea5aa68114a1, type: 3}
+  m_Script: {fileID: 11500000, guid: 5be55c3dfd9107043b74c4d75cb525f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   saveObject:
-    Moodcontroller: {fileID: 0}
     responseText: 
     dialogueObject: {fileID: 0}
     responseChange: 0
