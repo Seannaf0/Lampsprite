@@ -1182,7 +1182,7 @@ MonoBehaviour:
   saveObject:
     responseText: 
     dialogueObject: {fileID: 0}
-    responseChange: 0
+    moodChange: 0
 --- !u!4 &1040040342
 Transform:
   m_ObjectHideFlags: 0
