@@ -37,7 +37,7 @@ public class DialogueUI : MonoBehaviour
 
             if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.HasResponses) break;
 
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0));
         }
         
         if(dialogueObject.HasResponses)
@@ -55,5 +55,13 @@ public class DialogueUI : MonoBehaviour
     {
         dialogueBox.SetActive(false);
         textLabel.text = string.Empty;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+        }
     }
 }

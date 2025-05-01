@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
+  m_Name: Level1(1-D)
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "\"That doesn\u2019t mean that I don\u2019t still have more to learn. Why not
+    give in some of your own input...?\""
+  - "Well, I think that most of the lamp collection is based on living things.\r\nAnd
+    this sub-collection where I am is inspired by animals, including insects.\r\nOne
+    of the museum staff once said that I was an animal, I\u2019d probably be something
+    that flies."
+  - "In their words, it\u2019s because I\u2019m always \u201Cflying from one thing
+    to the next.\u201D\r\nI don\u2019t know if that\u2019s all that useful, though."
+  responses: []
