@@ -5,7 +5,6 @@ public class Response
 {
     [SerializeField] private string responseText;
     [SerializeField] private DialogueObject dialogueObject;
-    public float moodChange;
 
     public string ResponseText => responseText;
 
