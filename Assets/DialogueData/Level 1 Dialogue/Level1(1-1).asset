@@ -22,9 +22,11 @@ MonoBehaviour:
 
 '
   responses:
-  - responseText: Intro to Comics?
+  - Moodcontroller: {fileID: 0}
+    responseText: Intro to Comics?
     dialogueObject: {fileID: 11400000, guid: 535f9a40fa56cc24da7fedfba0e82192, type: 2}
-    responseChange: 0
-  - responseText: Superheroes?
-    dialogueObject: {fileID: 11400000, guid: 0745f89554324c744a05d1de3aa2574d, type: 2}
+    responseChange: 1
+  - Moodcontroller: {fileID: 0}
+    responseText: Superheroes?
+    dialogueObject: {fileID: 11400000, guid: 48fb2cb34ddedbd4abb86bde0b2f3760, type: 2}
     responseChange: 0

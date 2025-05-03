@@ -5,7 +5,6 @@ using UnityEngine;
 public class ReactionScript : MonoBehaviour
 {
     public float moodMeter;
-    public Response responseChange;
 
     public SpriteRenderer SpriteRenderer;
     public Sprite[] reactionSprite;

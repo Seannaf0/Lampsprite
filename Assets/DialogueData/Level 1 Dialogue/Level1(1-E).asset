@@ -10,7 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
-  m_Name: New Dialogue Object 8
+  m_Name: Level1(1-E)
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - "\"Well, I wouldn\u2019t expect you to know everything. Is there something else
+    in the museum that could be used while we\u2019re researching...?\""
+  - 'I guess you could look at some of the other exhibits for hints.
+
+    But it
+    might not really lead anywhere.
+
+    Sorry.'
   responses: []

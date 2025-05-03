@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
+  m_Name: Level1(1-C)
+  m_EditorClassIdentifier: 
+  dialogue:
+  - '"Well, it can be better to let some dreams stay in the clouds...."'
+  - "Yeah\u2026 I don\u2019t really know anything about what it\u2019d be like to
+    do that sort of job in real life.\r\nI\u2019m not so great at figuring out the
+    mysteries when they\u2019re only fiction, either."
+  responses:
+  - Moodcontroller: {fileID: 0}
+    responseText: Give it A Shot!
+    dialogueObject: {fileID: 11400000, guid: 98cc1c14490d0834faf3c016c33110f3, type: 2}
+    responseChange: 0
+  - Moodcontroller: {fileID: 0}
+    responseText: Don't Interfere.
+    dialogueObject: {fileID: 11400000, guid: e26a89ea632c6fe47821dd3a9ea627d7, type: 2}
+    responseChange: 1

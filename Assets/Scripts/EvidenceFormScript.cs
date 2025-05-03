@@ -3,37 +3,48 @@ using UnityEngine;
 
 public class EvidenceFormScript : MonoBehaviour
 {
-    public int[] correctOrder = new int[4];
-    public TMP_Dropdown[] dropdowns = new TMP_Dropdown[4];
-    public int[] answers = new int[4];
+    public int[] correctOrder = new int[3];
+    public TMP_Dropdown[] dropdowns = new TMP_Dropdown[3];
+    public int[] answers = new int[3];
+    public TMP_Dropdown nameDropdown;
 
 
     private void Start()
     {
-        correctOrder = new int[] { 2, 2, 2, 2 };
+        correctOrder = new int[] { 2, 2 , 2};
     }
-    public void PopulateCorrectAnswers(int one, int two, int three, int four)
+    public void PopulateCorrectAnswers(int one, int two, int three)
     {
-        correctOrder = new int[4] { one, two, three, four };
+        correctOrder = new int[3] { one, two, three };
     }
 
     public void SubmitButton()
     {
-        bool temp = CheckAnswers();
-        if(temp)
+        if (nameDropdown.value == 2)
         {
-            //do stuff when its right
+            bool temp = CheckAnswers();
+            if (temp)
+            {
+                Debug.Log("YUH HUH");
+                //do stuff when its right
+            }
+            else
+            {
+                Debug.Log("NUH UH");
+                //do stuff when wrong
+            }
         }
         else
         {
-            //tell the player its wrong
+            //do stuff when wrong
+            Debug.Log("NUH UH but #1");
         }
     }
 
     public bool CheckAnswers()
     {
         int correctCounter = 0;
-        for(int i = 0; i < 4; i++)
+        for(int i = 0; i < 3; i++)
         {
             if(answers[i] == correctOrder[i])
             {
@@ -41,7 +52,7 @@ public class EvidenceFormScript : MonoBehaviour
             }
         }
 
-        if(correctCounter == 4)
+        if(correctCounter >= 1)
         {
             return true;
         }
@@ -53,6 +64,6 @@ public class EvidenceFormScript : MonoBehaviour
 
     public void Answer(int index)
     {
-        answers[index] = dropdowns[index].value;
+        answers[index] = dropdowns[index].value;    
     }
 }
