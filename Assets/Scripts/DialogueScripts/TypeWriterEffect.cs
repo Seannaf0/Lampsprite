@@ -8,6 +8,11 @@ public class TypeWriterEffect : MonoBehaviour
 
     [SerializeField]private float writerSpeed = 50f;
 
+    public void SetWriterSpeed(float newSpeed)
+    {
+        writerSpeed = newSpeed;
+    }
+
     public Coroutine Run(string textToType, TMP_Text textLabel)
     {
         return StartCoroutine(TypeText(textToType, textLabel));

@@ -3,12 +3,15 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class DialogueUI : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text textLabel;
     [SerializeField] private DialogueObject testDialogue;
+
 
     private ResponseHandler responseHandler;
     private TypeWriterEffect typeWriterEffect;
@@ -37,7 +40,7 @@ public class DialogueUI : MonoBehaviour
 
             if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.HasResponses) break;
 
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0));
+            yield return new WaitUntil(() => (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0)) && !IsPointerOverSelectableUI());
         }
         
         if(dialogueObject.HasResponses)
@@ -47,7 +50,10 @@ public class DialogueUI : MonoBehaviour
         else
         {
             CloseDialogueBox();
-            SceneManager.LoadScene("Level 1 Computer", LoadSceneMode.Single);
+
+            //changes to the next scene in line in the build(MAKE SURE THAT THE COMPUTER IS AFTER EACH LEVEL!!!!)
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentSceneIndex + 1, LoadSceneMode.Single);
         }
     }
 
@@ -57,11 +63,25 @@ public class DialogueUI : MonoBehaviour
         textLabel.text = string.Empty;
     }
 
-    private void Update()
+    //detects if the mouse in a UI panel or button
+    private bool IsPointerOverSelectableUI()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        PointerEventData pointerData = new PointerEventData(EventSystem.current)
         {
-            SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+            position = Input.mousePosition
+        };
+
+        var raycastResults = new System.Collections.Generic.List<RaycastResult>();
+        EventSystem.current.RaycastAll(pointerData, raycastResults);
+
+        foreach (var result in raycastResults)
+        {
+            if (result.gameObject.GetComponent<Selectable>() != null)
+            {
+                return true; // It's a button or other interactive UI
+            }
         }
+
+        return false; // Just a panel or background UI
     }
 }

@@ -7,12 +7,30 @@ public class PauseMenu : MonoBehaviour
     public GameObject PausePanel;
     public GameObject SettingsPanel;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private TypeWriterEffect typeWriterEffect;
+
+    // Base Text speeds
+    private const float SlowSpeed = 50f;
+    private const float FastSpeed = 100f;
+    private const float InstantSpeed = 10000f;
+
+    //Text speeds
+    public void SetTextSpeedSlow()
     {
-        
+        typeWriterEffect.SetWriterSpeed(SlowSpeed);
     }
 
+    public void SetTextSpeedFast()
+    {
+        typeWriterEffect.SetWriterSpeed(FastSpeed);
+    }
+
+    public void SetTextSpeedInstant()
+    {
+        typeWriterEffect.SetWriterSpeed(InstantSpeed);
+    }
+
+    //Game pause and continuation
     public void Pause()
     {
         PausePanel.SetActive(true);
