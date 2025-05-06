@@ -15,15 +15,11 @@ MonoBehaviour:
   dialogue:
   - '"What would you like to do once you leave the museum...?"'
   - "It\u2019d be cool to be something like a detective\u2026 or a private investigator!\r\nI\u2019ve
-    been reading a lot of comics with detectives in them, and they seem neat.\r\nI
-    don\u2019t know if I could solve a real mystery, though. I would prefer to solve
-    a fake one, because it\u2019s lower stakes."
+    been reading a lot of comics with detectives in them, and they seem neat.\r"
+  - "I don\u2019t know if I could solve a real mystery, though. I would prefer to
+    solve a fake one, because it\u2019s lower stakes."
   responses:
-  - Moodcontroller: {fileID: 0}
-    responseText: Working Together!
+  - responseText: Working Together!
     dialogueObject: {fileID: 11400000, guid: 5fec31ed3fa7fd541a8c911c45498e6e, type: 2}
-    responseChange: 3
-  - Moodcontroller: {fileID: 0}
-    responseText: Let Dreams Stay in Clouds
+  - responseText: Let go of Dreams.
     dialogueObject: {fileID: 11400000, guid: dad24782e7ad9a74390b8f42d95128ed, type: 2}
-    responseChange: 2

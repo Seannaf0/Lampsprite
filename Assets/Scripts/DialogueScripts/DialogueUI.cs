@@ -16,6 +16,9 @@ public class DialogueUI : MonoBehaviour
     private ResponseHandler responseHandler;
     private TypeWriterEffect typeWriterEffect;
 
+    [SerializeField] private GameObject dialoguePanel;
+
+
     private void Start()
     {
         typeWriterEffect = GetComponent<TypeWriterEffect>();
@@ -40,7 +43,7 @@ public class DialogueUI : MonoBehaviour
 
             if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.HasResponses) break;
 
-            yield return new WaitUntil(() => (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0)) && !IsPointerOverSelectableUI());
+            yield return new WaitUntil(() => (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0)) && !IsPointerOverAllowedUI());
         }
         
         if(dialogueObject.HasResponses)
@@ -64,24 +67,31 @@ public class DialogueUI : MonoBehaviour
     }
 
     //detects if the mouse in a UI panel or button
-    private bool IsPointerOverSelectableUI()
+    private bool IsPointerOverAllowedUI()
+{
+    PointerEventData pointerData = new PointerEventData(EventSystem.current)
     {
-        PointerEventData pointerData = new PointerEventData(EventSystem.current)
-        {
-            position = Input.mousePosition
-        };
+        position = Input.mousePosition
+    };
 
-        var raycastResults = new System.Collections.Generic.List<RaycastResult>();
-        EventSystem.current.RaycastAll(pointerData, raycastResults);
+    var raycastResults = new System.Collections.Generic.List<RaycastResult>();
+    EventSystem.current.RaycastAll(pointerData, raycastResults);
 
-        foreach (var result in raycastResults)
+    foreach (var result in raycastResults)
+    {
+        // If it's over a button or input on the settings/pause panel, block input
+        if (result.gameObject.GetComponent<Selectable>() != null &&
+            !IsChildOfDialoguePanel(result.gameObject))
         {
-            if (result.gameObject.GetComponent<Selectable>() != null)
-            {
-                return true; // It's a button or other interactive UI
-            }
+            return true; // Block input
         }
-
-        return false; // Just a panel or background UI
     }
+
+    return false; // Safe to continue dialogue
+}
+
+private bool IsChildOfDialoguePanel(GameObject obj)
+{
+    return obj.transform.IsChildOf(dialogueBox.transform);
+}
 }
