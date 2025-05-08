@@ -363,8 +363,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c668b4b4a0bbfc24db633727b4efb269, type: 2}
-  m_sharedMaterial: {fileID: 5807303641211799334, guid: c668b4b4a0bbfc24db633727b4efb269, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -530,9 +530,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 319763441}
-  - component: {fileID: 319763440}
+  - component: {fileID: 279336717}
   - component: {fileID: 319763442}
+  - component: {fileID: 279336716}
   m_Layer: 0
   m_Name: Ivone
   m_TagString: Untagged
@@ -613,7 +613,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 319763439}
+  m_GameObject: {fileID: 279336715}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e084247d9ef5ea44855122ed7788d92, type: 3}
@@ -1792,8 +1792,8 @@ MonoBehaviour:
 
     New Text'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c668b4b4a0bbfc24db633727b4efb269, type: 2}
-  m_sharedMaterial: {fileID: 5807303641211799334, guid: c668b4b4a0bbfc24db633727b4efb269, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
