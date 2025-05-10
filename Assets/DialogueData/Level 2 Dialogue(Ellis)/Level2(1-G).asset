@@ -10,13 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
-  m_Name: Level1(1-F)
+  m_Name: Level2(1-G)
   m_EditorClassIdentifier: 
   dialogue:
-  - '"You know what? Maybe you could give it a shot anyway. Any ideas for what lamp
-    you are...?"'
-  - "Well, the museum staff joke a lot about how I only have brown and blue attire.\r\nBut
-    I\u2019ve heard it\u2019s not always a good idea to connect sprites to their
-    bonded objects using color alone.\r\nBut hey, maybe you\u2019ll find some more
-    evidence!"
+  - "\"I\u2019d rather you not interfere with the research process then. Is there
+    anything else you have to say...?\""
+  - "Uh, I think I\u2019m good. Thanks."
   responses: []

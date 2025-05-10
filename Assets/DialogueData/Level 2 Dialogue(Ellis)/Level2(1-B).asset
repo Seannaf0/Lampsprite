@@ -10,24 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
-  m_Name: Level1(1-B)
+  m_Name: Level2(1-B)
   m_EditorClassIdentifier: 
   dialogue:
   - "\"Hey, you could think of what we\u2019re doing right now as a bit of detective
     work. If you had to choose, which lamp do you think you\u2019d be...?\""
   - "One of the museum staff said that since I\u2019m always looking at stuff from
-    around the 1930s, maybe that's the same time my lamp is from.\r\nBut I\u2019ve
-    looked a little closer, and the dates don\u2019t work out. These kinds of lamps
-    stopped being produced around the 1920s."
+    around the 1930s, maybe that's the same time my lamp is from.\r\n"
+  - "But I\u2019ve looked a little closer, and the dates don\u2019t work out. These
+    kinds of lamps stopped being produced around the 1920s."
   - "In fact, they would\u2019ve been really out of style in the 1930s. So I don\u2019t
     know if there\u2019s any connection there\u2026\r\nHonestly, you probably shouldn\u2019t
     be asking me. I mean, you\u2019re the expert here, right?"
   responses:
-  - Moodcontroller: {fileID: 0}
-    responseText: Your Input?
+  - responseText: Your Input?
     dialogueObject: {fileID: 11400000, guid: 77662b18f1dc6224f86d73bfc2116165, type: 2}
-    responseChange: 0
-  - Moodcontroller: {fileID: 0}
-    responseText: Anything Else?
+  - responseText: Anything Else?
     dialogueObject: {fileID: 11400000, guid: 6b3aca8aa521e6a4289ceba93480f703, type: 2}
-    responseChange: 0

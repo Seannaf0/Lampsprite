@@ -10,12 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
-  m_Name: Level1(1-6)
+  m_Name: Level2(1-E)
   m_EditorClassIdentifier: 
   dialogue:
-  - '"What do you find fun in comics...?"'
-  - "I would say that I like mysteries and stories about detectives the most.\r\nIt\u2019s
-    nice to follow along, and come up with theories about what the truth could be.\r\nI\u2019m
-    not very good at interpreting the clues that are written in, but I try my best
-    to find what the solution is supposed to be!"
+  - "\"Well, I wouldn\u2019t expect you to know everything. Is there something else
+    in the museum that could be used while we\u2019re researching...?\""
+  - 'I guess you could look at some of the other exhibits for hints.
+
+    But it
+    might not really lead anywhere.
+
+    Sorry.'
   responses: []
