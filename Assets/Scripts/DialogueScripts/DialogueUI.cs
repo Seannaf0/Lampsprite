@@ -12,12 +12,14 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private TMP_Text textLabel;
     [SerializeField] private DialogueObject testDialogue;
 
-
     private ResponseHandler responseHandler;
     private TypeWriterEffect typeWriterEffect;
 
     [SerializeField] private GameObject dialoguePanel;
 
+    [SerializeField] private Image dialogueBoxImage;
+    [SerializeField] private Sprite npcDialogueSprite;
+    [SerializeField] private Sprite playerDialogueSprite;
 
     private void Start()
     {
@@ -28,25 +30,41 @@ public class DialogueUI : MonoBehaviour
         ShowDialogue(testDialogue);
     }
 
-    public void ShowDialogue(DialogueObject dialogueObject)
+    public void ShowDialogue(DialogueObject dialogueObject, bool isPlayerSpeaking = false)
     {
         dialogueBox.SetActive(true);
-        StartCoroutine(StepThroughDialogue(dialogueObject));
+        StartCoroutine(StepThroughDialogue(dialogueObject, isPlayerSpeaking));
+
+        if (dialogueBoxImage != null)
+        {
+            dialogueBoxImage.sprite = isPlayerSpeaking ? playerDialogueSprite : npcDialogueSprite;
+        }
     }
 
-    private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
+    private IEnumerator StepThroughDialogue(DialogueObject dialogueObject, bool isPlayerSpeaking)
     {
-        for(int i = 0; i < dialogueObject.Dialogue.Length; i++)
+        for (int i = 0; i < dialogueObject.Dialogue.Length; i++)
         {
             string dialogue = dialogueObject.Dialogue[i];
             yield return typeWriterEffect.Run(dialogue, textLabel);
 
-            if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.HasResponses) break;
+            // Wait for input to go to next line
+            yield return new WaitUntil(() =>
+                (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0)) && !IsPointerOverAllowedUI());
 
-            yield return new WaitUntil(() => (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0)) && !IsPointerOverAllowedUI());
+            // After player finishes their line and clicks to continue, switch back to NPC
+            if (i == 0 && isPlayerSpeaking && dialogueBoxImage != null)
+            {
+                dialogueBoxImage.sprite = npcDialogueSprite;
+            }
+
+            if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.HasResponses)
+            {
+                break;
+            }
         }
-        
-        if(dialogueObject.HasResponses)
+
+        if (dialogueObject.HasResponses)
         {
             responseHandler.ShowResponse(dialogueObject.Responses);
         }

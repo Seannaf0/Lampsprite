@@ -1839,7 +1839,7 @@ RectTransform:
   m_GameObject: {fileID: 1320744727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2.7477643}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 0.82125}
+  m_LocalScale: {x: 1, y: 1, z: 0.82125}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1215313951}
@@ -1847,7 +1847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 130, y: 168}
+  m_AnchoredPosition: {x: 130, y: 170}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1320744729
@@ -1926,7 +1926,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -215774079, guid: 3449143c7abd7694496b222d6ec0107a, type: 3}
+  m_Sprite: {fileID: 86683263, guid: aeef2d0c3bb31d944a2cc20183cdb35a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2920,6 +2920,9 @@ MonoBehaviour:
   textLabel: {fileID: 1513342438}
   testDialogue: {fileID: 11400000, guid: 0b27f930aa223e9478de0c88a2ce7ce0, type: 2}
   dialoguePanel: {fileID: 813275651}
+  dialogueBoxImage: {fileID: 813275653}
+  npcDialogueSprite: {fileID: 1900577530, guid: 423aafb033225c84f9849cc809770817, type: 3}
+  playerDialogueSprite: {fileID: -803797692, guid: 6974bfbb73cfdf745929fa7388ee73e6, type: 3}
 --- !u!114 &1628305733
 MonoBehaviour:
   m_ObjectHideFlags: 0

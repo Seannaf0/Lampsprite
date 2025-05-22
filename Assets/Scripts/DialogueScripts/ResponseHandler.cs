@@ -43,7 +43,6 @@ public class ResponseHandler : MonoBehaviour
         responseBox.gameObject.SetActive(true);
     }
 
-
     private void OnPickedResponse(Response response)
     {
         responseBox.gameObject.SetActive(false);
@@ -54,6 +53,7 @@ public class ResponseHandler : MonoBehaviour
         }
         tempResponseButtons.Clear();
 
-        dialogueUI.ShowDialogue(response.DialogueObject);
+        // Player is speaking now
+        dialogueUI.ShowDialogue(response.DialogueObject, isPlayerSpeaking: true);
     }
 } 
