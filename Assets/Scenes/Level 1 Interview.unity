@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 319763442}
   - component: {fileID: 279336716}
   m_Layer: 0
-  m_Name: Ivone
+  m_Name: Ellis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
