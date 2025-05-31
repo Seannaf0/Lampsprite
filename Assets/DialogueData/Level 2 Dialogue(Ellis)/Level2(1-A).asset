@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
-  m_Name: Level1(1-A)
+  m_Name: Level2(1-A)
   m_EditorClassIdentifier: 
   dialogue:
   - '"What would you like to do once you leave the museum...?"'
@@ -21,7 +21,5 @@ MonoBehaviour:
   responses:
   - responseText: Working Together!
     dialogueObject: {fileID: 11400000, guid: 5fec31ed3fa7fd541a8c911c45498e6e, type: 2}
-    moodChange: 0
-  - responseText: Let Dreams Stay in Clouds
+  - responseText: Let go of Dreams.
     dialogueObject: {fileID: 11400000, guid: dad24782e7ad9a74390b8f42d95128ed, type: 2}
-    moodChange: 0

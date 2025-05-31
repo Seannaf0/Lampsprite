@@ -3,6 +3,8 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class DialogueUI : MonoBehaviour
 {
@@ -13,6 +15,12 @@ public class DialogueUI : MonoBehaviour
     private ResponseHandler responseHandler;
     private TypeWriterEffect typeWriterEffect;
 
+    [SerializeField] private GameObject dialoguePanel;
+
+    [SerializeField] private Image dialogueBoxImage;
+    [SerializeField] private Sprite npcDialogueSprite;
+    [SerializeField] private Sprite playerDialogueSprite;
+
     private void Start()
     {
         typeWriterEffect = GetComponent<TypeWriterEffect>();
@@ -22,32 +30,51 @@ public class DialogueUI : MonoBehaviour
         ShowDialogue(testDialogue);
     }
 
-    public void ShowDialogue(DialogueObject dialogueObject)
+    public void ShowDialogue(DialogueObject dialogueObject, bool isPlayerSpeaking = false)
     {
         dialogueBox.SetActive(true);
-        StartCoroutine(StepThroughDialogue(dialogueObject));
+        StartCoroutine(StepThroughDialogue(dialogueObject, isPlayerSpeaking));
+
+        if (dialogueBoxImage != null)
+        {
+            dialogueBoxImage.sprite = isPlayerSpeaking ? playerDialogueSprite : npcDialogueSprite;
+        }
     }
 
-    private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
+    private IEnumerator StepThroughDialogue(DialogueObject dialogueObject, bool isPlayerSpeaking)
     {
-        for(int i = 0; i < dialogueObject.Dialogue.Length; i++)
+        for (int i = 0; i < dialogueObject.Dialogue.Length; i++)
         {
             string dialogue = dialogueObject.Dialogue[i];
             yield return typeWriterEffect.Run(dialogue, textLabel);
 
-            if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.HasResponses) break;
+            // Wait for input to go to next line
+            yield return new WaitUntil(() =>
+                (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0)) && !IsPointerOverAllowedUI());
 
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0));
+            // After player finishes their line and clicks to continue, switch back to NPC
+            if (i == 0 && isPlayerSpeaking && dialogueBoxImage != null)
+            {
+                dialogueBoxImage.sprite = npcDialogueSprite;
+            }
+
+            if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.HasResponses)
+            {
+                break;
+            }
         }
-        
-        if(dialogueObject.HasResponses)
+
+        if (dialogueObject.HasResponses)
         {
             responseHandler.ShowResponse(dialogueObject.Responses);
         }
         else
         {
             CloseDialogueBox();
-            SceneManager.LoadScene("Level 1 Computer", LoadSceneMode.Single);
+
+            //changes to the next scene in line in the build(MAKE SURE THAT THE COMPUTER IS AFTER EACH LEVEL!!!!)
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentSceneIndex + 1, LoadSceneMode.Single);
         }
     }
 
@@ -57,11 +84,32 @@ public class DialogueUI : MonoBehaviour
         textLabel.text = string.Empty;
     }
 
-    private void Update()
+    //detects if the mouse in a UI panel or button
+    private bool IsPointerOverAllowedUI()
+{
+    PointerEventData pointerData = new PointerEventData(EventSystem.current)
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        position = Input.mousePosition
+    };
+
+    var raycastResults = new System.Collections.Generic.List<RaycastResult>();
+    EventSystem.current.RaycastAll(pointerData, raycastResults);
+
+    foreach (var result in raycastResults)
+    {
+        // If it's over a button or input on the settings/pause panel, block input
+        if (result.gameObject.GetComponent<Selectable>() != null &&
+            !IsChildOfDialoguePanel(result.gameObject))
         {
-            SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+            return true; // Block input
         }
     }
+
+    return false; // Safe to continue dialogue
+}
+
+private bool IsChildOfDialoguePanel(GameObject obj)
+{
+    return obj.transform.IsChildOf(dialogueBox.transform);
+}
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6974bfbb73cfdf745929fa7388ee73e6
+guid: aeef2d0c3bb31d944a2cc20183cdb35a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level3_dialoguebox_0
+      name: Pause_0
       rect:
         serializedVersion: 2
-        x: 263
-        y: 824
-        width: 2384
-        height: 929
+        x: 299
+        y: 401
+        width: 322
+        height: 408
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff456ca39c8024e46a2c950d088eafd5
-      internalID: -803797692
+      spriteID: 2f33f3d38a94d7142912dc927b1f48c9
+      internalID: 86683263
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      level3_dialoguebox_0: -803797692
+      Pause_0: 86683263
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

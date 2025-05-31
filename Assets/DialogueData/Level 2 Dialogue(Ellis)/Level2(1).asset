@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
-  m_Name: Level1(1)
+  m_Name: Level2(1)
   m_EditorClassIdentifier: 
   dialogue:
   - "Hey! You\u2019re that interviewer or whatever that\u2019s supposed to help get
@@ -25,7 +25,5 @@ MonoBehaviour:
   responses:
   - responseText: Free time?
     dialogueObject: {fileID: 11400000, guid: 075df24f50fccd24b9dee10119d54c98, type: 2}
-    moodChange: 0
   - responseText: Once you leave?
     dialogueObject: {fileID: 11400000, guid: 80cc829588990144e8858e8f1eecd2eb, type: 2}
-    moodChange: 0
