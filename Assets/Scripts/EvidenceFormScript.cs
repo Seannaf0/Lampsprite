@@ -1,5 +1,8 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections.Generic;
+using System.Collections;
 
 public class EvidenceFormScript : MonoBehaviour
 {
@@ -7,11 +10,19 @@ public class EvidenceFormScript : MonoBehaviour
     public TMP_Dropdown[] dropdowns = new TMP_Dropdown[3];
     public int[] answers = new int[3];
     public TMP_Dropdown nameDropdown;
-
+    public int levelAnswerAmount;
 
     private void Start()
     {
         correctOrder = new int[] { 2, 2 , 2};
+        if (SceneManager.GetActiveScene().name == "Level 1 Computer")
+        {
+            levelAnswerAmount = 3;
+        }
+        else
+        {
+            levelAnswerAmount = 4;
+        }
     }
     public void PopulateCorrectAnswers(int one, int two, int three)
     {
