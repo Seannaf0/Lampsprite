@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - "\"Is there anything that stands out to you from what you\u2019ve read...?\""
-  - "I don\u2019t like when there are exaggerated stereotypes, or outdated ideas.
-    \r\nBut maybe because the earlier materials have flaws like this, it feels better
+  - "I don\u2019t like when there are exaggerated stereotypes, or outdated ideas."
+  - "But maybe because the earlier materials have flaws like this, it feels better
     to see how the characters change over time, in publications years down the line.
     \n"
   - "Though it is pretty annoying that there isn\u2019t a lot of reading material

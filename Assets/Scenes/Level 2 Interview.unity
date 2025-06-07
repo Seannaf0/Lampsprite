@@ -2337,7 +2337,7 @@ RectTransform:
   m_GameObject: {fileID: 1513342436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_LocalScale: {x: 0.99999994, y: 0.99, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 813275652}
@@ -2345,7 +2345,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 275, y: 0.0007324219}
+  m_AnchoredPosition: {x: 275, y: -0.25}
   m_SizeDelta: {x: 550, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1513342438
@@ -2399,8 +2399,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21
-  m_fontSizeBase: 21
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2903,7 +2903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d45680206a265e940bee18b13e9ef280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  writerSpeed: 40
+  writerSpeed: 400
 --- !u!114 &1628305732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2922,7 +2922,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 813275651}
   dialogueBoxImage: {fileID: 813275653}
   npcDialogueSprite: {fileID: 1900577530, guid: 423aafb033225c84f9849cc809770817, type: 3}
-  playerDialogueSprite: {fileID: -803797692, guid: 6974bfbb73cfdf745929fa7388ee73e6, type: 3}
+  playerDialogueSprite: {fileID: 5116727, guid: 7ac64286207b41c48a22284ddcef757c, type: 3}
 --- !u!114 &1628305733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3709,7 +3709,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 220, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2096283680
 GameObject:

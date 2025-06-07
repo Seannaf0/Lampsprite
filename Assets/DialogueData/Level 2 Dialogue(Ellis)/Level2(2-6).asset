@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogue:
   - '"What do you find fun in comics...?"'
   - "I would say that I like mysteries and stories about detectives the most.\r\nIt\u2019s
-    nice to follow along, and come up with theories about what the truth could be.\r\nI\u2019m
-    not very good at interpreting the clues that are written in, but I try my best
-    to find what the solution is supposed to be!"
+    nice to follow along, and come up with theories about what the truth could be.\r"
+  - "I\u2019m not very good at interpreting the clues that are written in, but I
+    try my best to find what the solution is supposed to be!"
   responses: []
