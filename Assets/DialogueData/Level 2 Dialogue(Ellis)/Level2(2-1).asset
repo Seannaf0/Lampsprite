@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
+  m_Name: Level2(2-1)
+  m_EditorClassIdentifier: 
+  dialogue:
+  - '"what have you been getting up to in your free time...?"'
+  - "I\u2019ve been reading through some of the museum\u2019s digital collection\u2013or,
+    gallery, I guess.\r\nI read comics the most, and it\u2019s pretty fun to see
+    how the characters and setting change over time."
+  - 'Like the character Plainclothes Pace, who starts off in a fairly normal setting,
+    but in stories decades later, travels to the moon and meets aliens!
+
+'
+  responses:
+  - Moodcontroller: {fileID: 0}
+    responseText: Intro to Comics?
+    dialogueObject: {fileID: 11400000, guid: 535f9a40fa56cc24da7fedfba0e82192, type: 2}
+    responseChange: 1
+  - Moodcontroller: {fileID: 0}
+    responseText: Superheroes?
+    dialogueObject: {fileID: 11400000, guid: 48fb2cb34ddedbd4abb86bde0b2f3760, type: 2}
+    responseChange: 0

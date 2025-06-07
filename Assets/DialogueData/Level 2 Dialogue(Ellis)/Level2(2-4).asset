@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
+  m_Name: Level2(2-4)
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "\"Is there anything that stands out to you from what you\u2019ve read...?\""
+  - "I don\u2019t like when there are exaggerated stereotypes, or outdated ideas.
+    \r\nBut maybe because the earlier materials have flaws like this, it feels better
+    to see how the characters change over time, in publications years down the line.
+    \n"
+  - "Though it is pretty annoying that there isn\u2019t a lot of reading material
+    besides the informative stuff, like summaries and wiki pages. "
+  - "Maybe most characters from the late 1930s are too overshadowed by the more famous
+    series that were created around then. So no one really cared about them for a
+    long time. \r\n"
+  - "But even if they weren\u2019t popular for a while, people still notice and remember
+    them later, and that\u2019s why the museum exists!\r\n"
+  responses: []
