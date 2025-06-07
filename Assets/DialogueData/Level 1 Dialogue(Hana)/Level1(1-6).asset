@@ -12,5 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
   m_Name: Level1(1-6)
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - "But\u2026 don\u2019t you find this situation strange? Waking up here, in this
+    museum, after all this time? Doesn\u2019t that seem unusual to you?"
+  - Situation? What situation? Whatever do you mean?
+  - "I\u2019ve already told you, I\u2019m sure the workshop will send for me soon.
+    This is just\u2026 a temporary arrangement\u2014perhaps a new exhibit or a special
+    project. There\u2019s nothing unusual about it.\r\n"
+  - "I don\u2019t see why you\u2019re making such a fuss. Everything is perfectly
+    fine.\r"
   responses: []

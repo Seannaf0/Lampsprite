@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
   m_Name: Level1(1-5)
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - Did anyone ever envy your success? You must have had rivals or critics, right?
+  - Envy is such a pedestrian emotion. I prefer not to concern myself with the feelings
+    of others. My work speaks for itself, and those who matter recognize its value.
+  - "As for the rest\u2026 well, their opinions are irrelevant.\r\nI\u2019ve never
+    had the time for petty rivalries or the noise of critics. True artistry requires
+    focus, not distractions."
   responses: []
