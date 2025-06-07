@@ -12,5 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
   m_Name: Level1(1-G)
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - "Is there something from your culture that\u2019s especially meaningful to you?
+    Something you\u2019d like to experience or revisit?"
+  - "Oh\u2026\r\nI wish to return to see my favorite wisteria trees. They were the
+    inspiration behind my most successful piece, after all."
+  - "I remember a particular grove from my youth\u2014its blooms were so lush and
+    vibrant they seemed to glow in the moonlight. \r\n"
+  - "No matter how hard I've tried, I\u2019ve never been able to replicate that exact
+    shade of purple in glass.\r"
+  - "I\u2019d give anything to stand beneath those trees again, to feel their petals
+    brush against my skin. It\u2019s where my heart truly belongs."
   responses: []

@@ -12,5 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
   m_Name: Level1(1-E)
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - "Do you ever feel\u2026 out of place here? Like this isn\u2019t where you\u2019re
+    supposed to be?"
+  - Out of place?
+  - "This is just a temporary arrangement. The workshop will send for me soon\u2014they
+    must. I\u2019m far too important to be left here indefinitely.\r\n"
+  - "Besides, I don\u2019t see why it matters. My work is my purpose; as long as
+    I can create, I\u2019m exactly where I need to be. Everything else is\u2026 irrelevant.\r\n"
   responses: []

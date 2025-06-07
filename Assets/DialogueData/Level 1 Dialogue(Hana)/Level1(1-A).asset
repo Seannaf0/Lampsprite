@@ -12,5 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
   m_Name: Level1(1-A)
   m_EditorClassIdentifier: 
-  dialogue: []
-  responses: []
+  dialogue:
+  - Do you have any hobbies or pastimes? You're an artist, right?
+  - "Hobbies?\r\nWell, my work is my hobby. Crafting is more than just a profession\u2014it\u2019s
+    a passion. Every piece I create is a reflection of my soul, my vision."
+  - 'Take my piece de resistance, for example. '
+  - "It wasn\u2019t just a commission; it was a labor of love. I spent countless
+    hours perfecting every detail, ensuring it captured the essence of the wisteria
+    tree in full bloom.\r\n"
+  - "There\u2019s nothing quite like seeing your creation come to life, knowing it
+    will outlast you and bring beauty to the world for generations. That\u2019s what
+    I live for.\r\n"
+  responses:
+  - responseText: Goals? Dreams?
+    dialogueObject: {fileID: 11400000, guid: 4b65b2c84e047cc4fb8113677a2ff133, type: 2}
+  - responseText: Inspirations?
+    dialogueObject: {fileID: 11400000, guid: 50f75933488b1f244b97cbbf0652c4c4, type: 2}

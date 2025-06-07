@@ -15,13 +15,15 @@ MonoBehaviour:
   dialogue:
   - "What was your most beloved piece? The one you\u2019re most proud of?"
   - "Ah, my pi\xE8ce de r\xE9sistance!\r"
-  - "I once crafted a lamp so radiant that it outshone the stars. It was a truly
-    elegant, timeless, and utterly unique masterpiece. Everyone who saw it was captivated.
-    Even Claire said it was one of the finest works to come out of the workshop.\r"
-  - "The inspiration came from my brilliance, naturally. And I suppose\u2026 also
-    a particular wisteria tree I was fond of in my youth. Its cascading blooms were
-    so delicate, so enchanting. I wanted to capture that beauty in glass, to make
-    it eternal.\r\n"
+  - I once crafted a lamp so radiant that it outshone the stars. It was a truly elegant,
+    timeless, and utterly unique masterpiece. Everyone who saw it was captivated.
+  - 'Even Claire said it was one of the finest works to come out of the workshop.
+
+    The
+    inspiration came from my brilliance, naturally.'
+  - "And I suppose\u2026 also a particular wisteria tree I was fond of in my youth.
+    Its cascading blooms were so delicate, so enchanting. I wanted to capture that
+    beauty in glass, to make it eternal.\r\n"
   - "But, of course, such artistry requires more than just inspiration. It takes
     skill, vision, and a touch of genius\u2014all of which I possess in abundance.\r\n"
   responses: []

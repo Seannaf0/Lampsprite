@@ -12,5 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
   m_Name: Level1(1-D)
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - "If you could travel anywhere, where would you go? Is there a specific place
+    you\u2019ve always wanted to see?"
+  - "Japan. \r\nI\u2019ve always dreamed of returning there. The landscapes, artistry,
+    and culture are where my heart truly belongs. There\u2019s a particular garden
+    I remember, filled with wisteria trees."
+  - "Their blooms were so breathtaking, so full of life\u2026 they inspired my most
+    iconic design.\r\nI\u2019d give anything to see those trees again, to feel their
+    petals brush against my skin. "
+  - "It\u2019s where my creativity was born, and I feel most at home."
   responses: []
