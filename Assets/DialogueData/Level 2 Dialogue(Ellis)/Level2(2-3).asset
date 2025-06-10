@@ -17,11 +17,9 @@ MonoBehaviour:
   - "Not really? \r\nI sort of like comics that make the reader think a bit. \r\nI\u2019m
     not a fan of the fighting or action scenes in other genres as much. "
   responses:
-  - Moodcontroller: {fileID: 0}
-    responseText: Fun in Comics?
+  - responseText: Fun in Comics?
     dialogueObject: {fileID: 11400000, guid: 15651b8ff6f9e784085c1eae084bbc6c, type: 2}
-    responseChange: 3
-  - Moodcontroller: {fileID: 0}
-    responseText: Romance?
+    moodValue: 0
+  - responseText: Romance?
     dialogueObject: {fileID: 11400000, guid: db71303e725008c4897767e41e2dd3e7, type: 2}
-    responseChange: 2
+    moodValue: 2

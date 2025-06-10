@@ -21,5 +21,7 @@ MonoBehaviour:
   responses:
   - responseText: Working Together!
     dialogueObject: {fileID: 11400000, guid: 5fec31ed3fa7fd541a8c911c45498e6e, type: 2}
+    moodValue: 1
   - responseText: Let go of Dreams.
     dialogueObject: {fileID: 11400000, guid: dad24782e7ad9a74390b8f42d95128ed, type: 2}
+    moodValue: 2

@@ -25,5 +25,7 @@ MonoBehaviour:
   responses:
   - responseText: Free time?
     dialogueObject: {fileID: 11400000, guid: 075df24f50fccd24b9dee10119d54c98, type: 2}
+    moodValue: 3
   - responseText: Once you leave?
     dialogueObject: {fileID: 11400000, guid: 80cc829588990144e8858e8f1eecd2eb, type: 2}
+    moodValue: 3
