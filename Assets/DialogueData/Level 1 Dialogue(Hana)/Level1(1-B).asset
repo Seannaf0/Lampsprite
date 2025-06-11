@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
+  m_Name: Level1(1-B)
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "Do you have any goals or dreams? Something you\u2019d like to achieve?"
+  - "Goals?\r\nI\u2019ve always wished to explore the world beyond my usual surroundings.
+    There\u2019s so much beauty out there, so much inspiration to be found. But\u2026"
+  - 'For now, my place is in the workshop. My work is my purpose, after all.
+
+    Perhaps
+    one day, though. One day.'
+  responses:
+  - responseText: Travel Anywhere?
+    dialogueObject: {fileID: 11400000, guid: c5e8e0f859aafc84a923f4066077026f, type: 2}
+  - responseText: Out of Place?
+    dialogueObject: {fileID: 11400000, guid: dcaf030e1fcd1ea44ad1355671b4fbc7, type: 2}

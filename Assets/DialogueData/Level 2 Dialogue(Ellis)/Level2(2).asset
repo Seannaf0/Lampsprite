@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
+  m_Name: Level2(2)
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "Hey! You\u2019re that interviewer or whatever that\u2019s supposed to help get
+    me out of here, right?\r"
+  - "The museum staff said that I should answer as many of your questions as possible.\r\nBut
+    visitors aren\u2019t allowed to be here for long, so I doubt you\u2019ll get
+    that many in.\r"
+  - "I\u2019m pretty sure Hana doesn't like it here very much.\r\nI don\u2019t have
+    many problems with the museum myself, but I\u2019d have to agree that I want
+    to leave at least once.\r\n"
+  - "So, uh, got any questions for me?\r"
+  responses:
+  - responseText: Free time?
+    dialogueObject: {fileID: 11400000, guid: 075df24f50fccd24b9dee10119d54c98, type: 2}
+    moodValue: 3
+  - responseText: Once you leave?
+    dialogueObject: {fileID: 11400000, guid: 80cc829588990144e8858e8f1eecd2eb, type: 2}
+    moodValue: 3

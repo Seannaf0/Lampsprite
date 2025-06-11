@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
+  m_Name: Level2(2-F)
+  m_EditorClassIdentifier: 
+  dialogue:
+  - '"You know what? Maybe you could give it a shot anyway. Any ideas for what lamp
+    you are...?"'
+  - "Well, the museum staff joke a lot about how I only have brown and blue attire.\r\nBut
+    I\u2019ve heard it\u2019s not always a good idea to connect sprites to their
+    bonded objects using color alone.\r"
+  - "But hey, maybe you\u2019ll find some more evidence!"
+  responses: []
