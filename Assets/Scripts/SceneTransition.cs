@@ -7,6 +7,6 @@ public class SceneTransition : MonoBehaviour
 {
     public void NextScene()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level 1 Interview");
     }
 }
