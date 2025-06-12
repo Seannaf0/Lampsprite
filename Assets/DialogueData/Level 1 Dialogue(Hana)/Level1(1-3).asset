@@ -22,5 +22,7 @@ MonoBehaviour:
   responses:
   - responseText: Find It Weird?
     dialogueObject: {fileID: 11400000, guid: e32b38849a0c6ca419dfddaa0bd4a5e2, type: 2}
+    moodValue: 1
   - responseText: Piece Unveiled?
     dialogueObject: {fileID: 11400000, guid: 1c894d1b78535c5418afb82b62104c81, type: 2}
+    moodValue: 3

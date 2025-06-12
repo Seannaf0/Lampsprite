@@ -24,5 +24,7 @@ MonoBehaviour:
   responses:
   - responseText: Your Work?
     dialogueObject: {fileID: 11400000, guid: 16d45f3dd9d33ea4e973fc826007faa6, type: 2}
+    moodValue: 3
   - responseText: Return?
     dialogueObject: {fileID: 11400000, guid: 4e4c5bce78379e140bbb1103a4a94e05, type: 2}
+    moodValue: 0

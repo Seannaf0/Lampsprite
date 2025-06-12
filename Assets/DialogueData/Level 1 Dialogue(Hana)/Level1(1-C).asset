@@ -28,5 +28,7 @@ MonoBehaviour:
   responses:
   - responseText: Fun? Hobbies?
     dialogueObject: {fileID: 11400000, guid: 6af862d413faedc4f8e88a0dbbf4ba24, type: 2}
+    moodValue: 2
   - responseText: Culutre?
     dialogueObject: {fileID: 11400000, guid: c3eaae63968abe0469e71a0cb06eca11, type: 2}
+    moodValue: 3
