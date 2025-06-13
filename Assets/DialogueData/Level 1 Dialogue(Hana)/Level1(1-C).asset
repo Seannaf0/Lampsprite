@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
+  m_Name: Level1(1-C)
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "That\u2019s fascinating! Do you have any other inspirations or influences in
+    your work? Something that makes your style unique?"
+  - "Ah, well\u2026\r\nMy heritage has always been a source of inspiration. "
+  - "My family is Japanese, you see, and I grew up surrounded by the beauty of traditional
+    craftsmanship\u2014\r\ndelicate ceramics, intricate woodwork, and, of course,
+    the elegance of nature."
+  - "The wisteria tree, for instance, holds a special place in Japanese culture.
+    \r\nIts cascading blooms symbolize love, perseverance, and the fleeting nature
+    of beauty."
+  - "I\u2019ve always tried to infuse that sense of grace and meaning into my work.
+    It\u2019s what sets my pieces apart, I think. A touch of the East blended with
+    the innovation of the West.\r\n"
+  responses:
+  - responseText: Fun? Hobbies?
+    dialogueObject: {fileID: 11400000, guid: 6af862d413faedc4f8e88a0dbbf4ba24, type: 2}
+    moodValue: 2
+  - responseText: Culutre?
+    dialogueObject: {fileID: 11400000, guid: c3eaae63968abe0469e71a0cb06eca11, type: 2}
+    moodValue: 3

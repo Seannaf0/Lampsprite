@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
+  m_Name: Level1(1-F)
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "So\u2026 what do you like to do for fun? Do you have any hobbies outside of
+    crafting?"
+  - "This again?\r"
+  - "Fine, I suppose I enjoy\u2026 observing and watching the world around me, finding
+    inspiration in the most minor details. \r"
+  - "A flicker of light, the curve of a leaf, the way shadows dance across a room.
+    It\u2019s all quite fascinating.\r\n"
+  - "Though I must admit, I don\u2019t have much time for leisure, as I mentioned
+    before, my work demands my full attention. \r\nCrafting is my life, after all.\r\n"
+  - "Crafting is my life, after all.\r"
+  responses: []

@@ -14,6 +14,8 @@ public class ResponseHandler : MonoBehaviour
 
     private List<GameObject> tempResponseButtons = new List<GameObject>();
 
+    [SerializeField] private ReactionScript reactionScript;
+
     private void Start()
     {
         dialogueUI = GetComponent<DialogueUI>();
@@ -52,6 +54,12 @@ public class ResponseHandler : MonoBehaviour
             Destroy(button);
         }
         tempResponseButtons.Clear();
+
+        // Change mood here before dialogue
+        if (reactionScript != null)
+        {
+            reactionScript.moodMeter = response.MoodValue;
+        }
 
         // Player is speaking now
         dialogueUI.ShowDialogue(response.DialogueObject, isPlayerSpeaking: true);

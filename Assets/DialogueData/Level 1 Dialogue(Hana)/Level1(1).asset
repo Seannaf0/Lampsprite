@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4857918aa396e664da4bf6e1e0405844, type: 3}
+  m_Name: Level1(1)
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "So you are the reporter they have sent to interview me? \r\nYou must find it
+    an honor to report on someone an artist as esteemed as I am.\nAsk whatever you
+    like!"
+  responses:
+  - responseText: Before Arriving?
+    dialogueObject: {fileID: 11400000, guid: bd7177ffc5434614dbcc47f386fb4019, type: 2}
+    moodValue: 3
+  - responseText: Hobbies? Passtimes?
+    dialogueObject: {fileID: 11400000, guid: 099c5c5ed42fecd4b896edd78fe9ebed, type: 2}
+    moodValue: 3
