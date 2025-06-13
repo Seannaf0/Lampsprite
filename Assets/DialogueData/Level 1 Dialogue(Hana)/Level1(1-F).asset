@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Level1(1-F)
   m_EditorClassIdentifier: 
   dialogue:
-  - "So\u2026 what do you like to do for fun? Do you have any hobbies outside of
-    crafting?"
+  - "\"So\u2026 what do you like to do for fun? Do you have any hobbies outside of
+    crafting...?\""
   - "This again?\r"
   - "Fine, I suppose I enjoy\u2026 observing and watching the world around me, finding
     inspiration in the most minor details. \r"

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level1(1-3)
   m_EditorClassIdentifier: 
   dialogue:
-  - "That\u2019s nice, but\u2026 do you plan to return? To the workshop, I mean?"
+  - "\"That\u2019s nice, but\u2026 do you plan to return? To the workshop, I mean...?\""
   - "Return?\r\nWell, of course, I\u2019ll go back! They\u2019ll send for me soon\u2014they
     must. The workshop can\u2019t function without me, after all."
   - "But\u2026 I suppose I haven\u2019t thought much about how. It\u2019s not like

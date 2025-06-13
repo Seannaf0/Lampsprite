@@ -2273,12 +2273,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 10a3d7cf832931b42aecd8f29e012432, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 70f813da0894462448773add8110b1c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 9, y: 18}
+  m_Size: {x: 4.5, y: 7}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2299,10 +2299,10 @@ MonoBehaviour:
   moodMeter: 0
   SpriteRenderer: {fileID: 1526132472}
   reactionSprite:
-  - {fileID: 21300000, guid: 10a3d7cf832931b42aecd8f29e012432, type: 3}
+  - {fileID: 21300000, guid: 70f813da0894462448773add8110b1c0, type: 3}
   - {fileID: 21300000, guid: fdba6db4b57ec1d4d867fe8851670479, type: 3}
   - {fileID: 21300000, guid: c05294974d753dc48bc0331bec747c2e, type: 3}
-  - {fileID: 21300000, guid: 2497f71907f5d394f825be8eae642503, type: 3}
+  - {fileID: 21300000, guid: 6c97fbc857c87f2408d45336306844f7, type: 3}
 --- !u!4 &1526132474
 Transform:
   m_ObjectHideFlags: 0
@@ -3053,8 +3053,8 @@ MonoBehaviour:
 
     New Text'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c668b4b4a0bbfc24db633727b4efb269, type: 2}
-  m_sharedMaterial: {fileID: 5807303641211799334, guid: c668b4b4a0bbfc24db633727b4efb269, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

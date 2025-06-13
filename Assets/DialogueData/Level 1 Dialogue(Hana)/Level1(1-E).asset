@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Level1(1-E)
   m_EditorClassIdentifier: 
   dialogue:
-  - "Do you ever feel\u2026 out of place here? Like this isn\u2019t where you\u2019re
-    supposed to be?"
+  - "\"Do you ever feel\u2026 out of place here? Like this isn\u2019t where you\u2019re
+    supposed to be...?\""
   - Out of place?
   - "This is just a temporary arrangement. The workshop will send for me soon\u2014they
     must. I\u2019m far too important to be left here indefinitely.\r\n"

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Level1(1-G)
   m_EditorClassIdentifier: 
   dialogue:
-  - "Is there something from your culture that\u2019s especially meaningful to you?
-    Something you\u2019d like to experience or revisit?"
+  - "\"Is there something from your culture that\u2019s especially meaningful to
+    you? Something you\u2019d like to experience or revisit...?\""
   - "Oh\u2026\r\nI wish to return to see my favorite wisteria trees. They were the
     inspiration behind my most successful piece, after all."
   - "I remember a particular grove from my youth\u2014its blooms were so lush and
