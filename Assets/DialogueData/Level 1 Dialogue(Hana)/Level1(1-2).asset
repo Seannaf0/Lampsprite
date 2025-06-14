@@ -24,5 +24,7 @@ MonoBehaviour:
   responses:
   - responseText: Most Beloved Piece?
     dialogueObject: {fileID: 11400000, guid: 8c6239ff49a35694db33a341d8163724, type: 2}
+    moodValue: 3
   - responseText: Anyone Envious?
     dialogueObject: {fileID: 11400000, guid: f0b6c342cc28ac049aa49c5d1f46e8bd, type: 2}
+    moodValue: 2

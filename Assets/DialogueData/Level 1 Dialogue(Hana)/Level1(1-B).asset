@@ -23,5 +23,7 @@ MonoBehaviour:
   responses:
   - responseText: Travel Anywhere?
     dialogueObject: {fileID: 11400000, guid: c5e8e0f859aafc84a923f4066077026f, type: 2}
+    moodValue: 3
   - responseText: Out of Place?
     dialogueObject: {fileID: 11400000, guid: dcaf030e1fcd1ea44ad1355671b4fbc7, type: 2}
+    moodValue: 1
