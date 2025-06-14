@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level1(1-5)
   m_EditorClassIdentifier: 
   dialogue:
-  - Did anyone ever envy your success? You must have had rivals or critics, right?
+  - '"Did anyone ever envy your success? You must have had rivals or critics, right...?"'
   - Envy is such a pedestrian emotion. I prefer not to concern myself with the feelings
     of others. My work speaks for itself, and those who matter recognize its value.
   - "As for the rest\u2026 well, their opinions are irrelevant.\r\nI\u2019ve never

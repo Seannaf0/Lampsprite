@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Level1(1-6)
   m_EditorClassIdentifier: 
   dialogue:
-  - "But\u2026 don\u2019t you find this situation strange? Waking up here, in this
-    museum, after all this time? Doesn\u2019t that seem unusual to you?"
+  - "\"But\u2026 don\u2019t you find this situation strange? Waking up here, in this
+    museum, after all this time? Doesn\u2019t that seem unusual to you...?\""
   - Situation? What situation? Whatever do you mean?
   - "I\u2019ve already told you, I\u2019m sure the workshop will send for me soon.
     This is just\u2026 a temporary arrangement\u2014perhaps a new exhibit or a special

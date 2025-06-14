@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level1(1-1)
   m_EditorClassIdentifier: 
   dialogue:
-  - What were you doing before you arrived at the museum...?
+  - '"What were you doing before you arrived at the museum...?"'
   - 'Oh, I was in the workshop, of course. The air was always filled with the scent
     of molten glass and the sound of craftsmen at work.  '
   - I remember the sunlight streaming through the windows, catching the colors of

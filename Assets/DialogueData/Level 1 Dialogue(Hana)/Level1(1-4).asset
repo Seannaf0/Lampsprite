@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level1(1-4)
   m_EditorClassIdentifier: 
   dialogue:
-  - "What was your most beloved piece? The one you\u2019re most proud of?"
+  - "\"What was your most beloved piece? The one you\u2019re most proud of...?\""
   - "Ah, my pi\xE8ce de r\xE9sistance!\r"
   - I once crafted a lamp so radiant that it outshone the stars. It was a truly elegant,
     timeless, and utterly unique masterpiece. Everyone who saw it was captivated.

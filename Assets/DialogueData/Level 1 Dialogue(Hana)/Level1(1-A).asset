@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level1(1-A)
   m_EditorClassIdentifier: 
   dialogue:
-  - Do you have any hobbies or pastimes? You're an artist, right?
+  - '"Do you have any hobbies or pastimes? You''re an artist, right...?"'
   - "Hobbies?\r\nWell, my work is my hobby. Crafting is more than just a profession\u2014it\u2019s
     a passion. Every piece I create is a reflection of my soul, my vision."
   - 'Take my piece de resistance, for example. '
@@ -26,5 +26,7 @@ MonoBehaviour:
   responses:
   - responseText: Goals? Dreams?
     dialogueObject: {fileID: 11400000, guid: 4b65b2c84e047cc4fb8113677a2ff133, type: 2}
+    moodValue: 0
   - responseText: Inspirations?
     dialogueObject: {fileID: 11400000, guid: 50f75933488b1f244b97cbbf0652c4c4, type: 2}
+    moodValue: 0

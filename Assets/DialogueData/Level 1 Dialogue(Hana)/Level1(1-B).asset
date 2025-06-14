@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level1(1-B)
   m_EditorClassIdentifier: 
   dialogue:
-  - "Do you have any goals or dreams? Something you\u2019d like to achieve?"
+  - "\"Do you have any goals or dreams? Something you\u2019d like to achieve...?\""
   - "Goals?\r\nI\u2019ve always wished to explore the world beyond my usual surroundings.
     There\u2019s so much beauty out there, so much inspiration to be found. But\u2026"
   - 'For now, my place is in the workshop. My work is my purpose, after all.

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Level1(1-7)
   m_EditorClassIdentifier: 
   dialogue:
-  - "You mentioned the workshop earlier\u2014what was it like when your piece de
-    resistance was unveiled? Was it a big event?"
+  - "\"You mentioned the workshop earlier\u2014what was it like when your piece de
+    resistance was unveiled? Was it a big event...?\""
   - 'Oh, it was magnificent.
 
 '

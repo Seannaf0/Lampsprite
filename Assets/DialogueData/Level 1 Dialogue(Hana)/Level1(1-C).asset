@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Level1(1-C)
   m_EditorClassIdentifier: 
   dialogue:
-  - "That\u2019s fascinating! Do you have any other inspirations or influences in
-    your work? Something that makes your style unique?"
+  - "\"That\u2019s fascinating! Do you have any other inspirations or influences
+    in your work? Something that makes your style unique...?\""
   - "Ah, well\u2026\r\nMy heritage has always been a source of inspiration. "
   - "My family is Japanese, you see, and I grew up surrounded by the beauty of traditional
     craftsmanship\u2014\r\ndelicate ceramics, intricate woodwork, and, of course,

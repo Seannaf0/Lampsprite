@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Level1(1-D)
   m_EditorClassIdentifier: 
   dialogue:
-  - "If you could travel anywhere, where would you go? Is there a specific place
-    you\u2019ve always wanted to see?"
+  - "\"If you could travel anywhere, where would you go? Is there a specific place
+    you\u2019ve always wanted to see...?\""
   - "Japan. \r\nI\u2019ve always dreamed of returning there. The landscapes, artistry,
     and culture are where my heart truly belongs. There\u2019s a particular garden
     I remember, filled with wisteria trees."

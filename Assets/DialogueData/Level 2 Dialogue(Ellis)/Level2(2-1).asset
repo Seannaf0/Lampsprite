@@ -24,7 +24,7 @@ MonoBehaviour:
   responses:
   - responseText: Intro to Comics?
     dialogueObject: {fileID: 11400000, guid: 535f9a40fa56cc24da7fedfba0e82192, type: 2}
-    moodValue: 1
+    moodValue: 3
   - responseText: Superheroes?
     dialogueObject: {fileID: 11400000, guid: 48fb2cb34ddedbd4abb86bde0b2f3760, type: 2}
     moodValue: 2
